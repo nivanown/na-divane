@@ -964,6 +964,19 @@ p {
 	line-height: 30px;	
 	}
 
+.payment-methods__list li { 
+	margin: 0 0 30px;
+	}
+
+.warning-text:before { 
+	top: 0;
+	transform: translateY(0);
+	}
+
+.payment-methods__list { 
+	margin: 0 0 40px;
+	}
+
 }
 
 @media only screen and (max-width: 420px) {
@@ -1027,6 +1040,25 @@ p {
 
 .warranty-text { 
 	padding: 15px;
+	}
+
+.payment-methods__icon { 
+	width: 36px;
+	}
+
+.payment-methods__title { 
+	font-size: 18px;
+	}
+
+.warning-text { 
+	padding: 0 0 0 51px;
+	font-size: 12px;
+	line-height: 22px;
+	}
+
+.warning-text:before { 
+	width: 36px;
+	height: 36px;
 	}
 
 }
