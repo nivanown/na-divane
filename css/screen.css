@@ -44,6 +44,36 @@
 	line-height: normal;
 	}
 
+.error-404__logo { 
+	height: 300px;
+	}
+
+.error-404__title { 
+	font-size: 34px;
+	}
+
+.search-form.big-size .search-form__btn { 
+	width: 40px;
+	height: 40px;
+	}
+
+.search-form.big-size input { 
+	padding: 0 40px 0 45px;
+	height: 40px;
+	}
+
+.privacy-policy { 
+	max-width: 1066px;
+	}
+
+.gl-title { 
+	font-size: 34px;
+	}
+
+.privacy-policy__top-panel p {
+	font-size: 16px;
+	} 
+
 }
 
 @media only screen and (max-width: 1500px) {
@@ -309,6 +339,23 @@
 	left: 0;
 	}
 
+.error-404__logo { 
+	height: 270px;
+	}
+
+.error-404__title { 
+	font-size: 30px;
+	line-height: normal;
+	}
+
+.more-link { 
+	font-size: 14px;
+	}
+
+.gl-title { 
+	font-size: 30px;
+	}
+
 }
 
 @media only screen and (max-width: 1280px) {
@@ -440,6 +487,32 @@
 	background: #fff;
 	}
 
+.error-404__logo { 
+	height: 200px;
+	}
+
+.error-404__title { 
+	font-size: 24px;
+	}
+
+.search-form.big-size { 
+	max-width: 480px;
+	}
+
+.error-404 p { 
+	margin: 0 auto 40px;
+	max-width: 486px;
+	text-align: center;
+	}
+
+.more-link { 
+	font-size: 12px;
+	}
+
+.gl-title { 
+	font-size: 24px;
+	}
+
 }
 
 @media only screen and (max-width: 800px) {
@@ -520,6 +593,20 @@
 .search-modal-products { 
 	grid-gap: 20px;
 	grid-template-columns: 1fr;
+	}
+
+.error-404__logo { 
+	margin: 0 0 30px;
+	height: 160px;
+	}
+
+.search-form.big-size { 
+	max-width: 100%;
+	}
+
+.error-404 p { 
+	font-size: 16px;
+	line-height: 24px;
 	}
 
 }
@@ -693,6 +780,38 @@
 
 }
 
+@media only screen and (max-width: 580px) {
+
+.bread-crumbs li { 
+	font-size: 12px;
+	}
+
+.privacy-policy__top-panel { 
+	padding: 0 0 30px;
+	}
+
+.privacy-policy__title { 
+	margin-top: 30px;
+	}
+
+.error-404 { 
+	padding: 0;
+	}
+
+.error-404__content { 
+	padding: 0 15px;
+	}
+
+.error-404__logo { 
+	height: 100px;
+	}
+
+.error-404__title { 
+	text-align: center;
+	}
+
+}
+
 @media only screen and (max-width: 420px) {
 
 .favorites-modal__content { 
@@ -724,6 +843,24 @@
 .search-modal__form input[type="text"] { 
 	padding-left: 34px;
 	font-size: 12px;
+	}
+
+.error-404__title { 
+	font-size: 20px;
+	}
+
+.error-404 .search-form { 
+	margin: 0 0 20px;
+	}
+
+.error-404 p { 
+	margin: 0 0 20px;
+	font-size: 14px;
+	line-height: 20px;
+	}
+
+.gl-title { 
+	font-size: 20px;
 	}
 
 }

@@ -298,6 +298,18 @@ body {
   max-width: 240px;
   }
 
+.header .search-form:before { 
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  content: "";
+  z-index: 10;
+  cursor: pointer;
+  }
+
 .search-form__m-btn { 
   display: none;
   width: 30px;
