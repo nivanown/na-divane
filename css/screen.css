@@ -513,6 +513,57 @@
 	font-size: 24px;
 	}
 
+.content-wrap { 
+	padding: 0;
+	}
+
+.contact-info { 
+	grid-gap: 20px;
+	}
+
+.contact-info__item { 
+	padding: 30px 20px;
+	}
+
+.contact-info__title { 
+	font-size: 16px;
+	}
+
+.contact-info__text { 
+	font-size: 14px;
+	}
+
+.form-list { 
+	grid-gap: 20px;
+	}
+
+fieldset { 
+	margin: 0 0 20px;
+	}
+
+input[type="tel"], 
+input[type="text"], 
+input[type="email"], 
+input[type="password"] { 
+	height: 40px;
+	}
+
+textarea { 
+	height: 130px;
+	}
+
+.form-text { 
+	font-size: 12px;
+	}
+
+.gl-checkbox label { 
+	font-size: 12px;
+	}
+
+.btn { 
+	padding: 12px 30px;
+	}
+
 }
 
 @media only screen and (max-width: 800px) {
@@ -609,6 +660,14 @@
 	line-height: 24px;
 	}
 
+.contact-info { 
+	grid-template-columns: 1fr;
+	}
+
+.form-list { 
+	grid-template-columns: 1fr;
+	}
+
 }
 
 @media only screen and (max-width: 640px) {
@@ -662,6 +721,10 @@
 .mailing-form__btn { 
 	width: 36px;
 	height: 36px;
+	}
+
+.map { 
+	margin: 0 0 40px;
 	}
 
 .footer__col { 
