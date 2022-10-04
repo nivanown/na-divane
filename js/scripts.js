@@ -89,6 +89,20 @@
         nextEl: "#trends-slider-arrows .swiper-button-next",
         prevEl: "#trends-slider-arrows .swiper-button-prev",
       },
+      breakpoints: {
+        0: {
+          slidesPerView: "auto",
+          spaceBetween: 20,
+        },
+        1360: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+        1420: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+      },
   });
 
   /*- recommendation-slider -*/
