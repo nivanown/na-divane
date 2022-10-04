@@ -600,6 +600,11 @@ textarea {
 	padding: 12px 30px;
 	}
 
+.cost-form .btn { 
+	padding: 10px 30px;
+	max-width: 170px;
+	}
+
 }
 
 @media only screen and (max-width: 800px) {
@@ -715,6 +720,41 @@ textarea {
 .info-navi li { 
 	padding: 0 10px;
 	font-size: 16px;
+	}
+
+.cost-form { 
+	margin: 0 0 40px;
+	}
+
+.cost-form p { 
+	font-size: 16px;
+	}
+
+.important-information { 
+	padding: 15px;
+	}
+
+.important-information p { 
+	font-size: 14px;
+	line-height: 22px;
+	}
+
+.cost-services { 
+	padding: 40px 0;
+	}
+
+.gl-table td { 
+	padding: 15px;
+	}
+
+.gl-table td { 
+	font-size: 12px;
+	line-height: 20px;
+	}
+
+.tabs-nav a { 
+	font-size: 12px;
+	line-height: 36px;
 	}
 
 }
@@ -977,6 +1017,42 @@ p {
 	margin: 0 0 40px;
 	}
 
+.rules li:before { 
+	font-size: 14px;
+	}
+
+.rules li { 
+	font-size: 14px;
+	line-height: 22px;
+	}
+
+.page__panel.changed { 
+	display: block;
+	}
+
+.cost-form p { 
+	font-size: 14px;
+	}
+
+.tabs-nav { 
+	padding: 30px 0 0;
+	}
+
+.gl-table td { 
+	padding: 10px;
+	font-size: 10px;
+	line-height: 16px;
+	}
+
+.cost-form__in { 
+	display: block;
+	}
+
+.cost-form .btn { 
+	margin: 20px 0 0;
+	max-width: 100%;
+	}
+
 }
 
 @media only screen and (max-width: 420px) {
@@ -997,6 +1073,12 @@ p {
 
 .quality-department__title { 
 	font-size: 20px;
+	}
+
+.gl-table td { 
+	padding: 5px;
+	font-size: 8px;
+	line-height: 12px;
 	}
 
 }
