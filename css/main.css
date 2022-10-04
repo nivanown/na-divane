@@ -360,7 +360,7 @@ body {
 
 /* search-modal */
 .search-modal { 
-  position: absolute;
+  position: fixed;
   width: 850px;
   left: 50%;
   top: 0;
