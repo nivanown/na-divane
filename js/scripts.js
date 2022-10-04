@@ -255,6 +255,16 @@
         nextEl: "#comparison-slider .swiper-button-next",
         prevEl: "#comparison-slider .swiper-button-prev",
       },
+      breakpoints: {
+        0: {
+          slidesPerView: "auto",
+          spaceBetween: 20,
+        },
+        1280: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+      },
   });
 
   /*- tabs -*/
