@@ -74,6 +74,10 @@
 	font-size: 16px;
 	} 
 
+.info-navi li { 
+	font-size: 18px;
+	}
+
 }
 
 @media only screen and (max-width: 1500px) {
@@ -354,6 +358,38 @@
 
 .gl-title { 
 	font-size: 30px;
+	}
+
+.warranty-text.indent-bt-big { 
+	margin: 0 0 60px;
+	}
+
+.warranty-text span { 
+	font-size: 16px;
+ 	}
+
+.warranty-info { 
+	margin: 0 0 60px;
+	}
+
+.warranty-info__item { 
+	display: block;
+	}
+
+.warranty-info__icon { 
+	margin: 0 auto 30px;
+	}
+
+.warranty-info__description { 
+	text-align: center;
+	}
+
+.quality-department { 
+	margin: 0 0 60px;
+	}
+
+.quality-department .btn { 
+	max-width: 300px;
 	}
 
 }
@@ -668,6 +704,19 @@ textarea {
 	grid-template-columns: 1fr;
 	}
 
+.warranty-info { 
+	grid-template-columns: 1fr;
+	}
+
+.quality-department { 
+	padding: 40px 0;
+	}
+
+.info-navi li { 
+	padding: 0 10px;
+	font-size: 16px;
+	}
+
 }
 
 @media only screen and (max-width: 640px) {
@@ -841,6 +890,15 @@ textarea {
 	padding: 15px;
 	}
 
+.warranty-text span { 
+	font-size: 14px;
+	}
+
+p { 
+	font-size: 14px;
+	line-height: 22px;
+	}
+
 }
 
 @media only screen and (max-width: 580px) {
@@ -873,6 +931,39 @@ textarea {
 	text-align: center;
 	}
 
+.info-navi { 
+	margin: 0 0 40px;
+	overflow-x: scroll;
+	white-space: nowrap;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+	}
+
+.info-navi::-webkit-scrollbar {
+	width: 0px; 
+	height: 0;
+	background: transparent;
+  	}
+
+.info-navi__in { 
+	justify-content: flex-start;
+	white-space: nowrap;
+	}
+
+.info-navi li {
+	margin: 0 15px 0 0; 
+	padding: 0;
+	}
+
+.info-navi li:last-child {
+	margin: 0;
+	}
+
+.info-navi a, 
+.info-navi span { 
+	line-height: 30px;	
+	}
+
 }
 
 @media only screen and (max-width: 420px) {
@@ -885,6 +976,14 @@ textarea {
 .mobile-modal__content { 
 	width: 100%;
 	left: 0;
+	}
+
+.warranty-text.indent-bt-big { 
+	margin: 0 0 40px;
+	}
+
+.quality-department__title { 
+	font-size: 20px;
 	}
 
 }
@@ -924,6 +1023,10 @@ textarea {
 
 .gl-title { 
 	font-size: 20px;
+	}
+
+.warranty-text { 
+	padding: 15px;
 	}
 
 }
