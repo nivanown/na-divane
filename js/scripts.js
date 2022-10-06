@@ -307,6 +307,20 @@
         nextEl: "#reviews-slider-arrows .swiper-button-next",
         prevEl: "#reviews-slider-arrows .swiper-button-prev",
       },
+      breakpoints: {
+        0: {
+          slidesPerView: "auto",
+          spaceBetween: 20,
+        },
+        1360: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+        1420: {
+          slidesPerView: 4,
+          spaceBetween: 30,
+        },
+      },
   });
 
   /*- purchase-slider -*/
@@ -320,6 +334,20 @@
       navigation: {
         nextEl: "#purchase-slider-arrows .swiper-button-next",
         prevEl: "#purchase-slider-arrows .swiper-button-prev",
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: "auto",
+          spaceBetween: 20,
+        },
+        1360: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+        1420: {
+          slidesPerView: 4,
+          spaceBetween: 30,
+        },
       },
   });
 
@@ -335,6 +363,20 @@
         nextEl: "#variants-slider-arrows .swiper-button-next",
         prevEl: "#variants-slider-arrows .swiper-button-prev",
       },
+      breakpoints: {
+        0: {
+          slidesPerView: "auto",
+          spaceBetween: 20,
+        },
+        1360: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+        1420: {
+          slidesPerView: 4,
+          spaceBetween: 30,
+        },
+      },
   });
 
   /*- similar-products-slider -*/
@@ -349,6 +391,20 @@
         nextEl: "#similar-products-slider-arrows .swiper-button-next",
         prevEl: "#similar-products-slider-arrows .swiper-button-prev",
       },
+      breakpoints: {
+        0: {
+          slidesPerView: "auto",
+          spaceBetween: 20,
+        },
+        1360: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+        1420: {
+          slidesPerView: 4,
+          spaceBetween: 30,
+        },
+      },
   });
 
   /*- recently-viewed-slider -*/
@@ -362,6 +418,19 @@
       navigation: {
         nextEl: "#recently-viewed-slider-arrows .swiper-button-next",
         prevEl: "#recently-viewed-slider-arrows .swiper-button-prev",
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: "auto",
+          spaceBetween: 15,
+        },
+        1024: {
+          slidesPerView: 7,
+          spaceBetween: 20,
+        },
+        1360: {
+          spaceBetween: 30,
+        },
       },
   });
 
@@ -568,6 +637,28 @@
           spaceBetween: 20,
         },
       },
+  });
+
+  /*- ordering-col -*/
+  var colRight = $('.product-info__right-col');
+  
+  $(window).scroll(function() {    
+      var scroll = $(window).scrollTop();
+      if (scroll >= 120) {
+          colRight.addClass('fixed');
+      } else {
+          colRight.removeClass('fixed');
+      }
+  });
+
+  /*- promo-slider -*/
+  var swiper = new Swiper(".m-gallery-slider", {
+    loop: true,
+    loopFillGroupWithBlank: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
   });
 
 });
