@@ -583,7 +583,7 @@
       return false;
   });
 
-  /*- favorites-modal -*/
+  /*- ideas-modal -*/
   $('.ideas__info-bullet').click(function(e) {
     $('.ideas-modal').addClass('show');
     $('body').addClass('m-scroll-none');
@@ -673,6 +673,125 @@
         nextEl: "#modal-product-slider-arrows .swiper-button-next",
         prevEl: "#modal-product-slider-arrows .swiper-button-prev",
       },
+  });
+
+  /*- sorting-group -*/
+  $('.sorting-group__text').click(function(e) {
+      if($(this).parent().hasClass('show')) {
+          $(this).parent().removeClass('show');
+      } else {
+          $(this).parent().addClass('show');
+      }
+      return false;
+  });
+
+  /*- sorting -*/
+  $('.sorting__text').click(function(e) {
+      if($(this).parent().hasClass('show')) {
+          $(this).parent().removeClass('show');
+      } else {
+          $(this).parent().addClass('show');
+      }
+      return false;
+  });
+
+  /*- vertical-scroll -*/
+  var swiper = new Swiper(".vertical-scroll", {
+    direction: "vertical",
+    slidesPerView: "auto",
+    freeMode: true,
+    scrollbar: {
+      el: ".vertical-scroll .swiper-scrollbar",
+    },
+    mousewheel: true,
+  });
+
+  /*- favorites-modal -*/
+  $('.filter-btn.all').click(function(e) {
+    $('.filters-modal').addClass('show');
+    $('.accordion__item').addClass('active');
+    $('body').addClass('scroll-none');
+    return false;
+  });
+
+  $('.filter-btn.type-product').click(function(e) {
+    $('.filters-modal').addClass('show');
+    $('.accordion__item.type-product').addClass('active');
+    $('body').addClass('scroll-none');
+    return false;
+  });
+
+  $('.filter-btn.price-info').click(function(e) {
+    $('.filters-modal').addClass('show');
+    $('.accordion__item.price-product').addClass('active');
+    $('body').addClass('scroll-none');
+    return false;
+  });
+
+  $('.filter-btn.main-color').click(function(e) {
+    $('.filters-modal').addClass('show');
+    $('.accordion__item.color-product').addClass('active');
+    $('body').addClass('scroll-none');
+    return false;
+  });
+
+  $('.filters-modal__close, .filters-modal__overlay').click(function(e) {
+    $('.filters-modal').removeClass('show');
+    $('.accordion__item').removeClass('active');
+    $('body').removeClass('scroll-none');
+  });
+
+  /*- accordion -*/
+  $('.accordion__title').click(function(e) {
+      if($(this).parent().hasClass('active')) {
+          $(this).parent().removeClass('active');
+      } else {
+          $(this).parent().addClass('active');
+      }
+      return false;
+  });
+
+  /*- price -*/
+  const rangeInput = document.querySelectorAll(".range-input input"),
+  priceInput = document.querySelectorAll(".price-input input"),
+  range = document.querySelector(".slider .progress");
+  let priceGap = 1000;
+
+  priceInput.forEach((input) => {
+    input.addEventListener("input", (e) => {
+      let minPrice = parseInt(priceInput[0].value),
+        maxPrice = parseInt(priceInput[1].value);
+
+      if (maxPrice - minPrice >= priceGap && maxPrice <= rangeInput[1].max) {
+        if (e.target.className === "input-min") {
+          rangeInput[0].value = minPrice;
+          range.style.left = (minPrice / rangeInput[0].max) * 100 + "%";
+        } else {
+          rangeInput[1].value = maxPrice;
+          range.style.right = 100 - (maxPrice / rangeInput[1].max) * 100 + "%";
+        }
+      }
+    });
+  });
+
+  rangeInput.forEach((input) => {
+    input.addEventListener("input", (e) => {
+      let minVal = parseInt(rangeInput[0].value),
+        maxVal = parseInt(rangeInput[1].value);
+
+      if (maxVal - minVal < priceGap) {
+        if (e.target.className === "range-min") {
+          rangeInput[0].value = maxVal - priceGap;
+        } else {
+          rangeInput[1].value = minVal + priceGap;
+        }
+      } else {
+        priceInput[0].value = minVal;
+        priceInput[1].value = maxVal;
+        range.style.left = (minVal / rangeInput[0].max) * 100 + "%";
+        range.style.right = 100 - (maxVal / rangeInput[1].max) * 100 + "%";
+      }
+    });
   });
 
 });
