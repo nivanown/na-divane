@@ -1153,6 +1153,10 @@ body {
   padding: 0;
   }
 
+.global-slider.swiper .swiper-wrapper { 
+  align-items: flex-end;
+  }
+
 .global-slider.swiper:before, 
 .global-slider.swiper:after {
   position: absolute;
