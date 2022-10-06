@@ -566,7 +566,7 @@
                                 <a href="#" data-hystmodal="#topper">Топпер</a>
                             </dd>
                         </dl>
-                        <a href="#" class="btn black-bg full-size">В корзину</a>
+                        <a href="#" class="btn black-bg full-size" data-hystmodal="#product-added">В корзину</a>
                         <ul class="product-info__info-links">
                             <li>
                                 <a href="#" class="delivery-i arrow-i" data-hystmodal="#delivery-assembly">Доставка и сборка</a>
@@ -2796,6 +2796,187 @@
         </div>
     </div>
     <!-- reviews modal end -->
+
+    <!-- credit modal Start -->
+    <div class="hystmodal middle-size right-modal" id="product-added" aria-hidden="true">
+        <div class="hystmodal__wrap">
+            <div class="hystmodal__window" role="dialog" aria-modal="true">
+                <button class="hystmodal__close" data-hystclose>Закрыть</button>
+                <div class="hystmodal__styled">
+                    <div class="modal-content">
+                        <h3 class="modal-title">Товар в корзине</h3>
+                        <div class="product-added">
+                            <div class="product-added__item">
+                                <div class="product-added__item-photo">
+                                    <img src="img/src/product1.jpg" alt="photo">
+                                </div>
+                                <div class="product-added__item-description">
+                                    <span class="product-added__item-title">Диван Эби Happy Light</span>
+                                    <div class="product-added__item-col">
+                                        <div class="switch">
+                                            <input value="1" type="text">
+                                            <span class="switch__more">+</span>
+                                            <span class="switch__fewer">-</span>
+                                        </div>
+                                        <span class="product-added__item-price">8 999 999 сум</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-added__price-panel">
+                                <div class="product-added__price-panel__left">
+                                    <p>После оформления заказа менеджер свяжется с вами, чтобы уточнить все детали</p>
+                                </div>
+                                <div class="product-added__price-panel__right">
+                                    <dl>
+                                        <dt>Итого 5 товаров на сумму</dt>
+                                        <dd>23 000 000 сум</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                            <a href="#" class="btn full-size black-bg">Оформить заказ</a>
+                        </div>
+                        <div class="product-added-slider">
+                            <div class="page__panel changed">
+                                <div class="page__panel-left-col">
+                                    <h2 class="title">С этим обычно покупают</h2>
+                                </div>
+                                <div id="modal-product-slider-arrows" class="global-slider-arrows">
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-button-next"></div>
+                                </div>
+                            </div>
+                            <div id="modal-product-slider" class="swiper global-slider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="product-item">
+                                            <div class="product-item__photo">
+                                                <div class="save-btn">
+                                                    <div class="save-btn__in"></div>
+                                                </div>
+                                                <a href="#">
+                                                    <img src="img/src/product3.jpg" alt="photo">
+                                                </a>
+                                            </div>
+                                            <span class="product-item__title">
+                                                <a href="#">Кресло Слипсон Grey</a>
+                                            </span>
+                                            <div class="price-panel">
+                                                <span class="price">2 545 000 сум</span>
+                                                <span class="old-price">3 000 000 сум</span>
+                                            </div>
+                                            <a href="#" class="btn transparent-bg full-size small-size">Добавить</a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product-item">
+                                            <div class="product-item__photo">
+                                                <div class="save-btn">
+                                                    <div class="save-btn__in"></div>
+                                                </div>
+                                                <a href="#">
+                                                    <img src="img/src/product3.jpg" alt="photo">
+                                                </a>
+                                            </div>
+                                            <span class="product-item__title">
+                                                <a href="#">Кресло Слипсон Grey</a>
+                                            </span>
+                                            <div class="price-panel">
+                                                <span class="price">2 545 000 сум</span>
+                                                <span class="old-price">3 000 000 сум</span>
+                                            </div>
+                                            <a href="#" class="btn transparent-bg full-size small-size">Добавить</a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product-item">
+                                            <div class="product-item__photo">
+                                                <div class="save-btn">
+                                                    <div class="save-btn__in"></div>
+                                                </div>
+                                                <a href="#">
+                                                    <img src="img/src/product3.jpg" alt="photo">
+                                                </a>
+                                            </div>
+                                            <span class="product-item__title">
+                                                <a href="#">Кресло Слипсон Grey</a>
+                                            </span>
+                                            <div class="price-panel">
+                                                <span class="price">2 545 000 сум</span>
+                                                <span class="old-price">3 000 000 сум</span>
+                                            </div>
+                                            <a href="#" class="btn transparent-bg full-size small-size">Добавить</a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product-item">
+                                            <div class="product-item__photo">
+                                                <div class="save-btn">
+                                                    <div class="save-btn__in"></div>
+                                                </div>
+                                                <a href="#">
+                                                    <img src="img/src/product3.jpg" alt="photo">
+                                                </a>
+                                            </div>
+                                            <span class="product-item__title">
+                                                <a href="#">Кресло Слипсон Grey</a>
+                                            </span>
+                                            <div class="price-panel">
+                                                <span class="price">2 545 000 сум</span>
+                                                <span class="old-price">3 000 000 сум</span>
+                                            </div>
+                                            <a href="#" class="btn transparent-bg full-size small-size">Добавить</a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product-item">
+                                            <div class="product-item__photo">
+                                                <div class="save-btn">
+                                                    <div class="save-btn__in"></div>
+                                                </div>
+                                                <a href="#">
+                                                    <img src="img/src/product3.jpg" alt="photo">
+                                                </a>
+                                            </div>
+                                            <span class="product-item__title">
+                                                <a href="#">Кресло Слипсон Grey</a>
+                                            </span>
+                                            <div class="price-panel">
+                                                <span class="price">2 545 000 сум</span>
+                                                <span class="old-price">3 000 000 сум</span>
+                                            </div>
+                                            <a href="#" class="btn transparent-bg full-size small-size">Добавить</a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product-item">
+                                            <div class="product-item__photo">
+                                                <div class="save-btn">
+                                                    <div class="save-btn__in"></div>
+                                                </div>
+                                                <a href="#">
+                                                    <img src="img/src/product3.jpg" alt="photo">
+                                                </a>
+                                            </div>
+                                            <span class="product-item__title">
+                                                <a href="#">Кресло Слипсон Grey</a>
+                                            </span>
+                                            <div class="price-panel">
+                                                <span class="price">2 545 000 сум</span>
+                                                <span class="old-price">3 000 000 сум</span>
+                                            </div>
+                                            <a href="#" class="btn transparent-bg full-size small-size">Добавить</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-scrollbar"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- credit modal end -->
 
     <!-- jQuery libs -->
     <script type="text/javascript" src="js/jquery.min.js"></script>
