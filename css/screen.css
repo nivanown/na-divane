@@ -1075,8 +1075,8 @@ textarea {
 	height: 250px;
 	}
 
-.m-gallery-slider.swiper { 
-	display: block !important;
+.m-gallery-slider-wrap { 
+	display: block;
 	}
 
 }

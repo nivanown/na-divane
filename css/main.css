@@ -5843,6 +5843,7 @@ p.small-size {
 /* m-gallery-slider */
 .m-gallery-slider-wrap { 
   position: relative;
+  display: none;
   margin: 0 0 30px;
   }
 
@@ -5862,7 +5863,6 @@ p.small-size {
   }
 
 .m-gallery-slider.swiper { 
-  display: none !important;
   margin: 0 -15px;
   }
 
