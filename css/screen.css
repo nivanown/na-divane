@@ -1449,6 +1449,10 @@ p.big-size {
 	margin: 0;
 	}
 
+.product-added-slider .title { 
+	font-size: 16px;
+	}
+
 }
 
 @media only screen and (max-width: 700px) {
@@ -2075,6 +2079,27 @@ p {
 
 .queries { 
 	margin: 0 0 30px;
+	}
+
+.product-added__item { 
+	display: block;
+	}
+
+.product-added__item-photo { 
+	margin: 0 0 30px;
+	}
+
+.product-added__price-panel { 
+	display: block;
+	}
+
+.product-added__price-panel__left { 
+	margin: 0 0 20px;
+	max-width: 100%;
+	}
+
+.product-added__price-panel__right { 
+	text-align: left;
 	}
 
 }

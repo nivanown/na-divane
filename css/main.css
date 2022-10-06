@@ -6112,3 +6112,122 @@ p.small-size {
   border: 0;
   background: #c4c4c4;
   }
+
+/* product-added */
+.product-added { 
+  margin: 0 0 50px;
+  }
+
+.product-added__item { 
+  display: flex;
+  align-items: center;
+  margin: 0 0 30px;
+  padding: 0 0 30px;
+  border-bottom: 1px dashed #c4c4c4;
+  }
+
+.product-added__item-photo { 
+  margin: 0 30px 0 0;
+  width: 210px;
+  min-width: 210px;
+  }
+
+.product-added__item-photo img { 
+  width: 100%;
+  }
+
+.product-added__item-description { 
+  flex-grow: 1;
+  }
+
+.product-added__item-title { 
+  display: block;
+  margin: 0 0 30px;
+  font-size: 16px;
+  font-weight: 500;
+  }
+
+.product-added__item-col { 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  }
+
+.product-added__item-price { 
+  font-size: 18px;
+  font-weight: 500;
+  }
+
+.product-added__price-panel { 
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 30px;
+  }
+
+.product-added__price-panel__left { 
+  max-width: 190px;
+  }
+
+.product-added__price-panel p { 
+  margin: 0;
+  color: #989898;
+  font-size: 14px;
+  line-height: 20px;
+  }
+
+.product-added__price-panel dt { 
+  margin: 0 0 5px;
+  color: #989898;
+  font-size: 14px;
+  }
+
+.product-added__price-panel dd {
+  font-size: 24px;
+  font-weight: 500;
+  }
+
+.product-added__price-panel__right { 
+  text-align: right;
+  }
+
+.hystmodal .page__panel.changed { 
+  align-items: center;
+  }
+
+.product-added-slider .global-slider.swiper { 
+  margin: 0 -40px;
+  padding: 0 40px;
+  }
+
+.product-added-slider .title { 
+  font-size: 20px;
+  }
+
+.product-added-slider .swiper-slide { 
+  width: 210px !important;
+  }
+
+.product-added-slider .global-slider.swiper:before, 
+.product-added-slider .global-slider.swiper:after { 
+  display: none;
+  }
+
+.product-added-slider .save-btn { 
+  display: none;
+  }
+
+.product-added-slider .price-panel { 
+  margin: 0 0 15px;
+  }
+
+.product-added-slider .price { 
+  font-size: 14px;
+  }
+
+.product-added-slider .old-price { 
+  font-size: 12px;
+  }
+
+.product-added-slider .btn { 
+  font-size: 14px;
+  }

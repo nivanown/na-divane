@@ -651,7 +651,7 @@
       }
   });
 
-  /*- promo-slider -*/
+  /*- m-gallery-slider -*/
   var swiper = new Swiper(".m-gallery-slider", {
     loop: true,
     loopFillGroupWithBlank: true,
@@ -659,6 +659,20 @@
       el: ".swiper-pagination",
       clickable: true,
     },
+  });
+
+  /*- modal-product-slider -*/
+  var swiper = new Swiper("#modal-product-slider", {
+      slidesPerView: "auto",
+      spaceBetween: 20,
+      scrollbar: {
+        el: "#modal-product-slider .swiper-scrollbar",
+        hide: true,
+      },
+      navigation: {
+        nextEl: "#modal-product-slider-arrows .swiper-button-next",
+        prevEl: "#modal-product-slider-arrows .swiper-button-prev",
+      },
   });
 
 });
