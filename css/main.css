@@ -567,6 +567,10 @@ body {
   color: #989898;
   }
 
+.header.fixed .header__phone { 
+  margin: 0 20px 0 0;
+  }
+
 .header__phone:after { 
   position: absolute;
   display: block;
@@ -586,6 +590,10 @@ body {
 
 .header__right-col .user-panel { 
   display: none;
+  }
+
+.header.fixed .header__right-col .user-panel { 
+  display: flex;
   }
 
 /* header__bottom-panel */
