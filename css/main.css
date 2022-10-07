@@ -1473,6 +1473,10 @@ body {
   z-index: 5;
   }
 
+.product-item__photo.big-size .product-item__photo-slider-dec { 
+  height: 426px;
+  }
+
 .product-item__photo-slider-dec:before { 
   position: absolute;
   display: block;
@@ -1504,7 +1508,7 @@ body {
   }
 
 .product-item__photo-slider-item { 
-  position: absolute;
+  position: absolute;  
   bottom: 0;
   left: 0;
   right: 0;
@@ -3552,7 +3556,13 @@ textarea:focus {
   }
 
 .products-list > li { 
+  display: flex;
+  align-items: flex-end;
   padding: 0 0 30px;
+  }
+
+.product-item.changed { 
+  width: 100%;
   }
 
 .product-item__colors-panel { 
